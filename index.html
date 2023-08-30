@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>To-Do List</h1>
+        <input id="task-input" type="text" placeholder="Enter a new task">
+        <button id="add-task">Add Task</button>
+        <ul id="task-list"></ul>
+        
+        <input id="priority-select" type="text" placeholder="Priority (high, medium, low)">
+        <input id="due-date-input" type="date">
+        <input id="tags-input" type="text" placeholder="Tags (comma-separated)">
+        <input id="reminder-input" type="datetime-local">
+        <input id="subtask-input" type="text" placeholder="Add subtask">
+        <ul id="subtask-list"></ul>
+        <select id="repeat-select">
+            <option value="none">None</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+        </select>
+        <textarea id="notes-input" placeholder="Add notes"></textarea>
+        
+        <input id="search-input" type="text" placeholder="Search tasks">
+        <select id="filter-select">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="incomplete">Incomplete</option>
+        </select>
+        
+        <ul id="task-list"></ul>
+        <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Dark Mode</button>
+        <button id="delete-all-tasks">Delete All Tasks</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
